@@ -169,14 +169,16 @@ Purpose: Demonstrate practical programming skills and explore cybersecurity awar
 Application Screenshots
 
 ![CyberShield Dashboard](https://raw.githubusercontent.com/spoiledjust4u-design/CyberShield/main/screenshots/CyberShield-Dashboard.png)
+
 Password Checker
 
-"Password Checker" (screenshots/Password-Checker.png)
+![Password Checker](https://raw.githubusercontent.com/spoiledjust4u-design/CyberShield/main/screenshots/Password-Checker.png)
 
 Scam Message Detector
 
-"Scam Message Detector" (screenshots/Scam-Message-Detector.png)
+![Scam Message Detector](https://raw.githubusercontent.com/spoiledjust4u-design/CyberShield/main/screenshots/Scam-Message-Detector.png)
 
 Website Scanner
 
-"Website Scanner" (screenshots/Website-Scanner.png)
+![Website Scanner](https://raw.githubusercontent.com/spoiledjust4u-design/CyberShield/main/screenshots/Website-Scanner.png)
+
