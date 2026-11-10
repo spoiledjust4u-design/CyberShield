@@ -168,10 +168,7 @@ Purpose: Demonstrate practical programming skills and explore cybersecurity awar
 
 Application Screenshots
 
-CyberShield Dashboard
-
-"CyberShield Dashboard" (screenshots/CyberShield-Dashboard.png)
-
+![CyberShield Dashboard](https://raw.githubusercontent.com/spoiledjust4u-design/CyberShield/main/screenshots/CyberShield-Dashboard.png)
 Password Checker
 
 "Password Checker" (screenshots/Password-Checker.png)
