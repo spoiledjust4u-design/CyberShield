@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="CyberShield is a digital safety dashboard for basic website risk analysis, scam message detection, password assessment, and security awareness.">
+
+<title>CyberShield | Digital Defense</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><!-- HEADER -->
+
+<header>
+    <div class="logo">
+        🛡️ CyberShield
+    </div>
+
+    <span class="status">
+        ● Protection Center
+    </span>
+</header>
+
+<main>
+
+    <!-- WELCOME SECTION -->
+
+    <section class="welcome">
+        <h1>Your Digital Defense Center</h1>
+
+        <p>
+            Protect yourself against suspicious websites,
+            phishing, scams, and password security threats.
+        </p>
+    </section>
+
+
+    <!-- SECURITY DASHBOARD -->
+
+    <section class="security-status">
+        <h2>Security Dashboard</h2>
+
+        <p id="securityMessage" aria-live="polite">
+            Your CyberShield dashboard is ready.
+        </p>
+    </section>
+
+
+    <!-- SECURITY TOOLS -->
+
+    <section class="tools">
+
+        <!-- WEBSITE SCANNER -->
+
+        <div class="tool-card">
+
+            <h3>🌐 Website Scanner</h3>
+
+            <p>
+                Check website addresses for potential
+                security warning signs.
+            </p>
+
+            <label for="websiteInput">
+                Website Address
+            </label>
+
+            <input
+                type="url"
+                id="websiteInput"
+                placeholder="https://example.com"
+                autocomplete="url"
+            >
+
+            <button type="button" onclick="scanWebsite()">
+                Scan Website
+            </button>
+
+            <div
+                id="websiteResult"
+                aria-live="polite"
+                aria-atomic="true">
+            </div>
+
+        </div>
+
+
+        <!-- SCAM MESSAGE DETECTOR -->
+
+        <div class="tool-card">
+
+            <h3>📩 Scam Message Detector</h3>
+
+            <p>
+                Analyze suspicious messages for possible
+                scam indicators.
+            </p>
+
+            <label for="messageInput">
+                Message to Analyze
+            </label>
+
+            <textarea
+                id="messageInput"
+                placeholder="Paste a suspicious message here">
+            </textarea>
+
+            <button type="button" onclick="scanMessage()">
+                Analyze Message
+            </button>
+
+            <p
+                id="messageResult"
+                aria-live="polite">
+            </p>
+
+        </div>
+
+
+        <!-- PASSWORD SECURITY -->
+
+        <div class="tool-card">
+
+            <h3>🔐 Password Security</h3>
+
+            <p>
+                Evaluate password characteristics
+                without transmitting the password.
+            </p>
+
+            <label for="passwordInput">
+                Test Password
+            </label>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter a test password"
+                autocomplete="off"
+            >
+
+            <button type="button" onclick="checkPassword()">
+                Check Password
+            </button>
+
+            <p
+                id="passwordResult"
+                aria-live="polite">
+            </p>
+
+        </div>
+
+
+        <!-- SECURITY ALERTS -->
+
+        <div class="tool-card">
+
+            <h3>🚨 Security Alerts</h3>
+
+            <p>
+                Review important security reminders
+                and recommendations.
+            </p>
+
+            <button type="button" onclick="showAlerts()">
+                View Alerts
+            </button>
+
+            <p
+                id="alertResult"
+                aria-live="polite">
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCAN HISTORY -->
+
+    <section class="scan-history-section">
+
+        <h2>Scan History</h2>
+
+        <p>
+            Review previously completed website scans.
+        </p>
+
+        <div
+            id="scanHistory"
+            aria-live="polite">
+
+            <p>No scans recorded yet.</p>
+
+        </div>
+
+        <button
+            type="button"
+            onclick="clearScanHistory()">
+
+            Clear History
+
+        </button>
+
+    </section>
+
+
+    <!-- SECURITY REPORTS -->
+
+    <section class="tool-card">
+
+        <h2>📄 Security Reports</h2>
+
+        <p>
+            Download a PDF report of your most recent
+            website security assessment.
+        </p>
+
+        <button
+            type="button"
+            onclick="downloadPDFReport()">
+
+            Download PDF Report
+
+        </button>
+
+    </section>
+
+
+    <!-- SECURITY DISCLAIMER -->
+
+    <section class="security-disclaimer">
+
+        <h2>Security Disclaimer</h2>
+
+        <p>
+            CyberShield provides basic security assessments
+            using predefined warning patterns and scoring
+            rules. It does not guarantee that a website,
+            message, or password is safe. It is not a
+            replacement for professional cybersecurity
+            testing or threat-intelligence services.
+        </p>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        CyberShield © 2026 | Your Digital Safety Matters
+    </p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="app.js"></script>
+
+</body></html>

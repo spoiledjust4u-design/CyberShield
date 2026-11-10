@@ -1,0 +1,551 @@
+/* ==================================================
+CYBERSHIELD - DIGITAL DEFENSE
+COMPLETE APPLICATION STYLESHEET
+================================================== */
+
+/* ==================================================
+GLOBAL SETTINGS
+================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #0b1120;
+color: #ffffff;
+line-height: 1.6;
+min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+outline: 3px solid #00e6b8;
+outline-offset: 3px;
+}
+
+/* ==================================================
+HEADER
+================================================== */
+
+header {
+background: #111c32;
+padding: 22px 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 2px solid #00d4a6;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+font-size: 27px;
+font-weight: bold;
+color: #00e6b8;
+letter-spacing: 0.5px;
+}
+
+.status {
+color: #00e6b8;
+font-size: 14px;
+font-weight: bold;
+}
+
+/* ==================================================
+MAIN CONTENT
+================================================== */
+
+main {
+width: 90%;
+max-width: 1200px;
+margin: 40px auto;
+}
+
+/* ==================================================
+WELCOME SECTION
+================================================== */
+
+.welcome {
+text-align: center;
+margin-bottom: 35px;
+}
+
+.welcome h1 {
+font-size: 36px;
+color: #00e6b8;
+margin-bottom: 15px;
+}
+
+.welcome p {
+color: #bdc9d8;
+line-height: 1.8;
+max-width: 750px;
+margin: auto;
+}
+
+/* ==================================================
+SECURITY DASHBOARD STATUS
+================================================== */
+
+.security-status {
+background: #14233d;
+padding: 25px;
+border-radius: 12px;
+border-left: 5px solid #00e6b8;
+margin-bottom: 30px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.security-status h2 {
+color: #ffffff;
+margin-bottom: 12px;
+}
+
+.security-status p {
+color: #00e6b8;
+}
+
+/* ==================================================
+SECURITY TOOL GRID
+================================================== */
+
+.tools {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 25px;
+}
+
+/* ==================================================
+TOOL CARDS
+================================================== */
+
+.tool-card {
+background: #14233d;
+padding: 25px;
+border-radius: 12px;
+border: 1px solid #263c5d;
+transition: transform 0.2s, border-color 0.2s;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tool-card:hover {
+transform: translateY(-4px);
+border-color: #00e6b8;
+}
+
+.tool-card h2,
+.tool-card h3 {
+color: #00e6b8;
+margin-bottom: 15px;
+}
+
+.tool-card p {
+color: #bdc9d8;
+margin-bottom: 15px;
+line-height: 1.6;
+}
+
+/* ==================================================
+FORM LABELS
+================================================== */
+
+label {
+display: block;
+color: #00e6b8;
+font-weight: bold;
+margin-bottom: 7px;
+}
+
+/* ==================================================
+INPUT FIELDS
+================================================== */
+
+input,
+textarea {
+width: 100%;
+padding: 13px;
+margin-bottom: 15px;
+border-radius: 6px;
+border: 1px solid #405675;
+background: #0b1120;
+color: #ffffff;
+font-size: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+color: #8193aa;
+}
+
+input:focus,
+textarea:focus {
+border-color: #00e6b8;
+outline: none;
+}
+
+textarea {
+min-height: 110px;
+resize: vertical;
+}
+
+/* ==================================================
+BUTTONS
+================================================== */
+
+button {
+background: #00c99b;
+color: #071522;
+border: none;
+padding: 12px 20px;
+border-radius: 6px;
+cursor: pointer;
+font-weight: bold;
+font-size: 14px;
+transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+background: #00f0b5;
+transform: translateY(-2px);
+}
+
+button:disabled {
+background: #63758a;
+color: #ffffff;
+cursor: not-allowed;
+transform: none;
+}
+
+/* ==================================================
+RESULT AREAS
+================================================== */
+
+#websiteResult,
+#messageResult,
+#passwordResult,
+#alertResult {
+margin-top: 15px;
+overflow-wrap: anywhere;
+white-space: pre-line;
+color: #bdc9d8;
+}
+
+#alertResult {
+line-height: 1.9;
+}
+
+/* ==================================================
+WEBSITE SECURITY RESULTS
+================================================== */
+
+.security-results {
+background: #1a1a1a;
+border: 2px solid #34495e;
+border-radius: 12px;
+padding: 20px;
+margin: 20px 0;
+color: #ffffff;
+}
+
+.security-results h3 {
+color: #f5c16c;
+margin-bottom: 15px;
+}
+
+.security-results h4 {
+color: #f5c16c;
+margin-top: 18px;
+margin-bottom: 10px;
+}
+
+.security-results p {
+line-height: 1.7;
+margin-bottom: 10px;
+}
+
+.security-results ul {
+padding-left: 22px;
+margin-bottom: 15px;
+}
+
+.security-results li {
+color: #bdc9d8;
+margin-bottom: 8px;
+overflow-wrap: anywhere;
+}
+
+.security-results small {
+display: block;
+color: #cccccc;
+margin-top: 15px;
+}
+
+/* ==================================================
+RISK CLASSIFICATION BADGES
+================================================== */
+
+.risk-badge {
+display: inline-block;
+padding: 5px 12px;
+border-radius: 20px;
+font-weight: bold;
+margin-left: 5px;
+}
+
+.risk-badge.low {
+background: #198754;
+color: #ffffff;
+}
+
+.risk-badge.moderate {
+background: #f39c12;
+color: #1a1a1a;
+}
+
+.risk-badge.high {
+background: #dc3545;
+color: #ffffff;
+}
+
+/* ==================================================
+RISK METER
+================================================== */
+
+.risk-meter-section {
+margin: 20px 0;
+}
+
+.risk-meter {
+width: 100%;
+height: 18px;
+background: #34495e;
+border-radius: 20px;
+overflow: hidden;
+margin: 10px 0;
+}
+
+.risk-meter-fill {
+height: 100%;
+width: 0;
+border-radius: 20px;
+transition: width 0.6s ease;
+}
+
+.risk-meter-fill.low {
+background: #198754;
+}
+
+.risk-meter-fill.moderate {
+background: #f39c12;
+}
+
+.risk-meter-fill.high {
+background: #dc3545;
+}
+
+/* ==================================================
+REPORT BUTTONS
+================================================== */
+
+.security-results button {
+background: #198754;
+color: #ffffff;
+border: none;
+padding: 12px 20px;
+border-radius: 6px;
+cursor: pointer;
+font-weight: bold;
+margin: 10px 8px 0 0;
+}
+
+.security-results button:hover {
+background: #146c43;
+}
+
+/* ==================================================
+SCAN HISTORY
+================================================== */
+
+.scan-history-section {
+background: #14233d;
+border: 1px solid #34495e;
+border-radius: 12px;
+padding: 25px;
+margin: 30px auto;
+color: #ffffff;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.scan-history-section h2 {
+color: #00e6b8;
+margin-bottom: 10px;
+}
+
+.scan-history-section > p {
+color: #bdc9d8;
+margin-bottom: 20px;
+}
+
+.history-item {
+background: #1a2d49;
+border-left: 4px solid #00e6b8;
+padding: 18px;
+margin: 15px 0;
+border-radius: 6px;
+color: #ffffff;
+}
+
+.history-item strong {
+color: #00e6b8;
+}
+
+.history-item p {
+color: #bdc9d8;
+margin-top: 8px;
+overflow-wrap: anywhere;
+}
+
+.history-item small {
+display: block;
+color: #aabbd0;
+margin-top: 10px;
+}
+
+.scan-history-section button {
+background: #dc3545;
+color: #ffffff;
+margin-top: 15px;
+}
+
+.scan-history-section button:hover {
+background: #b02a37;
+}
+
+/* ==================================================
+SECURITY REPORT SECTION
+================================================== */
+
+.security-disclaimer {
+background: #14233d;
+border-left: 5px solid #f39c12;
+border-radius: 10px;
+padding: 22px;
+margin: 30px 0;
+}
+
+.security-disclaimer h2 {
+color: #f5c16c;
+margin-bottom: 12px;
+}
+
+.security-disclaimer p {
+color: #bdc9d8;
+line-height: 1.8;
+}
+
+/* ==================================================
+FOOTER
+================================================== */
+
+footer {
+text-align: center;
+padding: 25px;
+color: #8193aa;
+margin-top: 40px;
+border-top: 1px solid #263c5d;
+background: #111c32;
+}
+
+/* ==================================================
+TABLET RESPONSIVENESS
+================================================== */
+
+@media (max-width: 900px) {
+
+main {
+    width: 92%;
+}
+
+.tools {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+}
+
+/* ==================================================
+MOBILE RESPONSIVENESS
+================================================== */
+
+@media (max-width: 700px) {
+
+.tools {
+    grid-template-columns: 1fr;
+}
+
+.welcome h1 {
+    font-size: 28px;
+}
+
+header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+main {
+    width: 92%;
+    margin: 25px auto;
+}
+
+.tool-card {
+    padding: 20px;
+}
+
+.scan-history-section {
+    padding: 18px;
+}
+
+.security-results {
+    padding: 15px;
+}
+
+}
+
+/* ==================================================
+SMALL MOBILE SCREENS
+================================================== */
+
+@media (max-width: 400px) {
+
+.welcome h1 {
+    font-size: 24px;
+}
+
+.logo {
+    font-size: 21px;
+}
+
+button {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+}
