@@ -165,3 +165,21 @@ Developed as an independent software development and cybersecurity learning proj
 Project: CyberShield | Digital Defense
 
 Purpose: Demonstrate practical programming skills and explore cybersecurity awareness through an interactive web application.
+
+Application Screenshots
+
+CyberShield Dashboard
+
+"CyberShield Dashboard" (screenshots/CyberShield-Dashboard.png)
+
+Password Checker
+
+"Password Checker" (screenshots/Password-Checker.png)
+
+Scam Message Detector
+
+"Scam Message Detector" (screenshots/Scam-Message-Detector.png)
+
+Website Scanner
+
+"Website Scanner" (screenshots/Website-Scanner.png)
